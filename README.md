@@ -2,6 +2,7 @@
 
 Here is a basic set of mini projects that demonstrate the fundamental principles of the C programming language.
 
+### Setting up
 Follow the instructions to run each program:
 
 1.   Click on `Download ZIP` at the green button `<> Code`
