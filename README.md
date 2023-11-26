@@ -1,6 +1,6 @@
 # My Projects
 
-Here is a basic set of mini projects that demonstrates the fundamental principles of the C programming language.
+Here is a basic set of mini projects that demonstrates the fundamental principles of C programming language.
 
 ### Setting up
 Follow the instructions to run each program:
