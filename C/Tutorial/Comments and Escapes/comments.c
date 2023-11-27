@@ -23,7 +23,7 @@ int main(){
     */
 
     printf("\n1\t2\t3\n4\t5\t6\n7\t8\t9\n\n");
-    printf("\"I like Pizza\" - Abraham Lincoln");
+    printf("\"I like Pizza\" - Abraham Lincoln\n");
 
 
     return 0;

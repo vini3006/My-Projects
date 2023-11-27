@@ -25,7 +25,7 @@ int main(){
     // x = x % 2;
     // x%=2;
  
-    printf("%d", x);
+    printf("\n%d\n", x);
     
     
     return 0;

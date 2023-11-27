@@ -16,7 +16,7 @@ int main(){
     area = PI * radius * radius;
 
     printf("\nPerimeter: %f meters", perimeter);
-    printf("\nArea: %f square meters", area);
+    printf("\nArea: %f square meters\n", area);
 
 
     return 0;

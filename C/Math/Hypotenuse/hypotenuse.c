@@ -17,7 +17,7 @@ int main(){
 
     c = sqrt(a*a + b*b);
 
-    printf("\nHypotenuse is %f meters", c);
+    printf("\nHypotenuse is %f meters\n", c);
 
 
     return 0;

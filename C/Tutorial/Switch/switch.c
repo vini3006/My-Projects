@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 
 int main(){
 
@@ -7,8 +8,10 @@ int main(){
 
    char grade;
 
-   printf("\nEnter a uppercase letter grade: ");
+   printf("\nEnter a letter grade: ");
    scanf("%c", &grade);
+
+   grade = toupper(grade);
 
    switch(grade){
       case 'A':

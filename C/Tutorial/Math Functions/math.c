@@ -20,7 +20,7 @@ int main(){
     double I = cos(2*PI);         // radians
     double J = tan(PI/6);
     
-    printf("\n%lf", J);
+    printf("\n%lf\n", J);
 
 
     return 0;

@@ -15,7 +15,7 @@ int main(){
     scanf("%d", &age);
 
     printf("\nHello %s, how are you?", name);
-    printf("\nYou are %d years old!", age);
+    printf("\nYou are %d years old!\n", age);
 
 
     return 0;

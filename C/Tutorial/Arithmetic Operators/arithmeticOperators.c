@@ -25,8 +25,8 @@ int main(){
     // x++;
     // y--;
 
-    printf("%d", x);
-    printf("%d", y);
+    printf("\n%d\n", x);
+    printf("\n%d\n", y);
     
 
     return 0;
