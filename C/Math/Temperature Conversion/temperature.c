@@ -46,6 +46,9 @@ int main(){
         temp = (temp * 9/5) + 32;
         printf("The temperature in Fahrenheit is %.2f\n", temp);
     }
+    else{
+        printf("\nEnter a valid temperature unit!\n");
+    }
 
 
     return 0;
