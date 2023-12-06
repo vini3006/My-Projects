@@ -3,9 +3,7 @@
 int main(){
 
     const float PI = 3.141592;
-    float radius;
-    float perimeter;
-    float area;
+    float radius, perimeter, area;
 
     printf("\nHello! Welcome to the circle's calculator!\n");
 

@@ -3,9 +3,7 @@
 
 int main(){
 
-    float a;
-    float b;
-    float c;
+    float a, b, c;
 
     printf("\nHello! Welcome to the hypotenuse's calculator!\n");
 
