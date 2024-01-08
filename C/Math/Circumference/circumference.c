@@ -6,7 +6,50 @@ char choice;
 const double PI = 3.14159265358979323;
 double radius, diameter, perimeter, area;
 
-void forRadius() {
+// Function Prototypes
+void forRadius(double radius);
+void toRadius();
+
+int main() {
+    printf("\nHello! Welcome to the circle's calculator!\n\n");
+
+    while (1) {
+        printf("\nEnter \"R\" for radius, \"D\" for diameter, \"P\" for perimeter, or \"A\" for area to choose a value, in meters: ");
+        scanf(" %c", &choice);
+        while (getchar() != '\n');
+
+        switch (toupper(choice)) {
+            case 'R':
+                while (1) {
+                    printf("\nEnter the radius value, in meters: ");
+                    if (scanf(" %lf", &radius) != 1 || radius < 0) {
+                        printf("Error: Invalid radius value. Please enter a valid non-negative value!\n");
+                        while (getchar() != '\n');
+                        continue;
+                    }
+                    forRadius(radius);
+                    break;
+                }
+                break;
+            case 'D':
+            case 'P':
+            case 'A':
+                toRadius();
+                break;
+            default:
+                printf("Invalid choice. Please enter a valid value!\n");
+                continue;
+        }
+
+        break;
+
+    } 
+
+    return 0;
+}
+
+// Function to calculate and display information for the radius
+void forRadius(double radius) {
     diameter = 2 * radius;
     perimeter = 2 * PI * radius;
     area = PI * radius * radius;
@@ -17,7 +60,8 @@ void forRadius() {
     printf("\nArea:       %lf square meters\n", area);
 }
 
-void toRadius() {       // transforming all other variables values to radius value, in meters
+// Function to transform all other values into radius, in meters
+void toRadius() {
     while (1) {
         switch (toupper(choice)) {
             case 'D':
@@ -56,46 +100,66 @@ void toRadius() {       // transforming all other variables values to radius val
         break;
     }
 
-    forRadius();
+    forRadius(radius);
 }
 
-int main() {
-    printf("\nHello! Welcome to the circle's calculator!\n");
-    
-    while (1) {
-        printf("\nEnter \"R\" for radius, \"D\" for diameter, \"P\" for perimeter or \"A\" for area to choose a value, in meters: ");
-        scanf(" %c", &choice);
-        while (getchar() != '\n');
+/*
 
-        switch (toupper(choice)) {
-            case 'R':
-                while (1) {    
-                    printf("\nEnter the radius value, in meters: ");
-                    if (scanf(" %lf", &radius) != 1 || radius < 0) {
-                        printf("Error: Invalid radius value. Please enter a valid non-negative numeric value!\n");
-                        while (getchar() != '\n');
-                        continue;
-                    }
-                    forRadius();
-                    break;
-                }
-                break;
-            case 'D':
-            case 'P':
-            case 'A':
-                toRadius();
-                break;
-            default:
-                printf("Invalid choice. Please enter a valid value!\n");
-                while (getchar() != '\n');
-                continue;
-        }
+Suggestions for geometric functionalities:
 
-        break;
-    }
+1. Calculate Arc Length
+2. Calculate Area of Circular Sectors
+3. Circles Concentricity
+4. Relationship between Circumference and Diameter
+5. Circle Inscribed in a Square
+6. Proportion Calculator
+7. 3D Plane Circle Characteristics
+8. Circle Tangent to Two Line Segments
+9. Function to draw a 2D circle graph on the Cartesian plane (<graphics.h> or <SDL2/SDL.h>)
+10. Function to draw a 3D sphere and its parameters(3D graphics library or APIs like OpenGL or DirectX)
 
-    return 0;
-}
 
-// adicionar função de desenhar gráfico da circunferência 2D no plano cartesiano (<graphics.h> ou <SDL2/SDL.h>)
-// adicionar função de desenhar Esfera 3D e fornecer seus parâmetros
+
+Additional suggestions for geometric functionalities:
+
+11. Function to calculate and display information for a sector of the circle 
+    - arc length, sector area, central angle
+
+12. Function to calculate and display information for a segment of the circle
+    - segment's area/height
+
+13. Function to calculate and display information for an inscribed angle
+    - angle formed by the chord and arc
+
+14. Function to calculate and display information for a circle inscribed in a triangle
+    - find the radius of the inscribed circle and its center coordinates
+
+15. Function to calculate and display information for a circle circumscribed around a triangle
+    - find the radius of the circumscribed circle and its center coordinates
+
+16. Function to calculate and display information for a regular polygon inscribed in a circle
+    - determine the side length, perimeter, and area of the polygon
+
+17. Function to calculate and display information for a regular polygon circumscribed around a circle
+    - determine the side length, perimeter, and area of the polygon
+
+18. Function to calculate and display information for the intersection of two circles
+    - calculate and display information about the points where two circles intersect
+    - determine the number of intersection points and their coordinates
+
+19. Function to calculate and display information for the common tangent of two circles
+    - determine the length and position of the common tangent line
+
+20. Function to calculate and display information for the circle tangent to two circles
+    - determine the radius and position of the tangent circle
+
+21. Function to calculate and display information for the concentric circles
+    - display information about the radius and position of each circle
+
+22. Function to calculate and display information for the Pappus's Centroids Theorem
+    - calculate and display information about the centroid of the area formed by rotating one circle around the other
+
+23. Function to calculate and display information for the area of the circle ring
+    - calculate and display the area of the region between two concentric circles
+
+*/
