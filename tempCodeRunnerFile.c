@@ -4,6 +4,7 @@
 int main() {
 
     double a, b, c;
+    int isValidInput = 1;
 
     printf("\nHello! Welcome to the hypotenuse's calculator!\n");
 
@@ -11,25 +12,21 @@ int main() {
         printf("\nEnter cathetus \"a\", in meters: ");
         if (scanf(" %lf", &a) != 1 || a < 0) {
             printf("Error: Invalid cathetus value. Please enter a valid non-negative numeric value!\n");
+            isValidInput = 0;
             while (getchar() != '\n');
         }
-        else {
-            break;
-        }
     }
-    while (1);
+    while (!isValidInput);
 
     do {
         printf("\nEnter cathetus \"b\", in meters: ");
         if (scanf(" %lf", &b) != 1 || b < 0) {
             printf("Error: Invalid cathetus value. Please enter a valid non-negative numeric value!\n");
+            isValidInput = 0;
             while (getchar() != '\n');
         }
-        else {
-            break;
-        }
     }
-    while (1);
+    while (!isValidInput);
 
     c = sqrt(a*a + b*b);
 

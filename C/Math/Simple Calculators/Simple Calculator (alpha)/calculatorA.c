@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main(){
-
+int main() {
     char operator;
     double n1, n2, result;
 
@@ -9,13 +8,13 @@ int main(){
 
     printf("\nEnter what operator will be used (+) (-) (*) (/): ");
     scanf(" %c", &operator);        // Added space before %c to consume any blank characters
-    printf("\nEnter number 1: ");
-    scanf("%lf", &n1);
+    printf("\nEnter the first number: ");
+    scanf(" %lf", &n1);
 
-    printf("Enter number 2: ");
-    scanf("%lf", &n2);
+    printf("Enter the second number: ");
+    scanf(" %lf", &n2);
 
-    switch(operator){
+    switch(operator) {
         case '+':
             result = n1 + n2;
             printf("\nResult: %lf\n", result);

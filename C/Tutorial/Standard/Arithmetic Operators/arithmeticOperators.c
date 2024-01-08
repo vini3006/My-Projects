@@ -9,7 +9,7 @@ int main(){
     *  (multiplication)
     /  (division)
     %  (modulus)
-    ++ (ncrement)
+    ++ (increment)
     -- (decrement) 
     
     */

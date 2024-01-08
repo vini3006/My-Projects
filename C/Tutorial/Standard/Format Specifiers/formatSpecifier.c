@@ -18,17 +18,17 @@ int main(){
     float item2 = 10.00;
     float item3 = 100.99;
 
-    printf("\nItem 1: $%f\n", item1);
-    printf("Item 2: $%f\n", item2);         // without decimal precision (default = 6) and without minimum field width
-    printf("Item 3: $%f\n", item3);
+    printf("\nItem 1: $%f", item1);
+    printf("\nItem 2: $%f", item2);         // without decimal precision (default = 6) and without minimum field width
+    printf("\nItem 3: $%f\n", item3);
 
-    printf("\nItem 1: $%8.2f\n", item1);
-    printf("Item 2: $%8.2f\n", item2);       // with 0.2 decimal precision and with +8 minimum field width 
-    printf("Item 3: $%8.2f\n", item3);
+    printf("\nItem 1: $%8.2f", item1);
+    printf("\nItem 2: $%8.2f", item2);       // with 0.2 decimal precision and with +8 minimum field width 
+    printf("\nItem 3: $%8.2f\n", item3);
 
-    printf("\nItem 1: $%-8.2f\n", item1);
-    printf("Item 2: $%-8.2f\n", item2);     // with 0.2 decimal precision and with -8 minimum field width
-    printf("Item 3: $%-8.2f\n", item3);
+    printf("\nItem 1: $%-8.2f", item1);
+    printf("\nItem 2: $%-8.2f", item2);     // with 0.2 decimal precision and with -8 minimum field width
+    printf("\nItem 3: $%-8.2f\n", item3);
     
 
     return 0;
