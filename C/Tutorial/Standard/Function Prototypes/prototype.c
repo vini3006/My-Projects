@@ -2,9 +2,11 @@
 
 void hello(char[], int);      // function prototype
 
-int main(){
+int main() {
 
-   /* WHAT IS IT?
+   /* 
+   
+   WHAT IS IT?
       Function declaration, w/o a body, before main()
       Ensures that calls to a function are made with the correct arguments
 
@@ -17,6 +19,7 @@ int main(){
       1. Easier to navigate a program w/ main() at the top
       2. Helps with debugging
       3. Commonly used in header files 
+
    */
 
 
@@ -25,14 +28,10 @@ int main(){
 
     hello(name, age);
 
-
     return 0;
-
 }
 
-void hello(char name[], int age){
-
+void hello(char name[], int age) {
     printf("\nHello, %s!", name);
     printf("\nYou are %d years old!\n", age);
-    
 }

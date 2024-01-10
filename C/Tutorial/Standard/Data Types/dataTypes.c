@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int main(){
-
+int main() {
     char a = 'C';                       // single character    %c
     char b[] = "Renan";                 // array of characters %s  
 
@@ -36,7 +35,6 @@ int main(){
     printf("%u\n", k);    // unsigned int
     printf("%lld\n", l);  // long long int
     printf("%llu\n", m);  // unsigned long long int
-
 
     return 0;
 }

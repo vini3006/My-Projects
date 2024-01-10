@@ -6,7 +6,7 @@ int main() {
     double temp;
     long long int i, nMin, nMax;
 
-    printf("\nHello! Welcome to the Parity Range Calculator!\n");
+    printf("\nHello! Welcome to the Parity Range Calculator!\n\n");
 
     while (1) {
         printf("\nEnter 'E' for even numbers or 'O' for odd numbers: ");
@@ -33,7 +33,7 @@ int main() {
     while (1) {
         printf("Enter a MAXIMUM limit value for the count: ");
         if (scanf(" %lf", &temp) != 1 || temp != (long long int)temp || temp <= nMin) {
-            printf("Invalid input! Please enter a valid integer greater than %lld!\n\n", nMin);
+            printf("\nInvalid input! Please enter a valid integer greater than %lld!\n\n", nMin);
             while (getchar() != '\n');
             continue;
         }

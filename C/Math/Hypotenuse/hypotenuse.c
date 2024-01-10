@@ -19,9 +19,9 @@ int main() {
     }
 
     while (1) {
-        printf("\nEnter cathetus \"b\", in meters: ");
+        printf("Enter cathetus \"b\", in meters: ");
         if (scanf(" %lf", &b) != 1 || b < 0) {
-            printf("Error: Invalid cathetus value. Please enter a valid non-negative numeric value!\n");
+            printf("\nError: Invalid cathetus value. Please enter a valid non-negative numeric value!\n\n");
             while (getchar() != '\n');
             continue;
         }

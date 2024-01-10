@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(){
-
+int main() {
     const float PI = 3.141592;
 
     double A = sqrt(9);
@@ -17,11 +16,10 @@ int main(){
     double G = log(3);
     
     double H = sin(PI/2);
-    double I = cos(2*PI);         // radians
+    double I = cos(2*PI);       // radians
     double J = tan(PI/6);
     
     printf("\n%lf\n", J);
-
 
     return 0;
 }

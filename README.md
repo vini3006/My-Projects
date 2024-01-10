@@ -9,4 +9,4 @@ Follow the instructions to run each program:
 2.   Extract the archive to your machine (Desktop folder recommended)
 3.   Choose a program from its respective folder
 4.   Open Windows Command Prompt and run `cd` to navigate to the directory where the chosen folder is located
-5.   Type `a.exe` and hit `Enter` to run the code    
+5.   Type `a.exe` and hit `Enter` to run the code

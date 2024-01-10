@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(){
+int main() {
 
     char name[25]; // bytes
     int age;
@@ -12,11 +12,10 @@ int main(){
     name[strlen(name)-1] = '\0';
 
     printf("How old are you? ");
-    scanf("%d", &age);
+    scanf(" %d", &age);
 
     printf("\nHello %s, how are you?", name);
     printf("\nYou are %d years old!\n", age);
-
 
     return 0;
 }

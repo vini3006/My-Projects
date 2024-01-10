@@ -1,19 +1,16 @@
 #include <stdio.h>
 
-void birthday(){
-    
+void birthday() {
    printf("\nHappy birthday to you!");
    printf("\nHappy birthday to you!");
    printf("\nHappy birthday dear...YOU!");
    printf("\nHappy birthday to you!\n");
 }
 
-int main(){
-
+int main() {
     birthday();
     birthday();
     birthday();
-
 
     return 0;
 }

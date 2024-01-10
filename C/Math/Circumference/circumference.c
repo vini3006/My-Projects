@@ -91,10 +91,6 @@ void toRadius() {
                 }
                 radius = sqrt(area / PI);
                 break;
-            default:
-                printf("Invalid choice. Please enter a valid value!\n");
-                while (getchar() != '\n');
-                continue;
         }
 
         break;

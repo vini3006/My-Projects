@@ -1,7 +1,6 @@
 #include <stdio.h>
  
-int main(){
-  
+int main() {
     // augmented assignment operators = used to replace a statement where an operator
     //                                  takes a variable as one of its arguments
     //                                  and then assigns the result back to the same variable
@@ -26,7 +25,6 @@ int main(){
     // x%=2;
  
     printf("\n%d\n", x);
-    
     
     return 0;
 }

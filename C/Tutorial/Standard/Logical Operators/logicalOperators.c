@@ -2,7 +2,6 @@
 #include <stdbool.h>
 
 int main () {
-
     // logical operator && (AND) checks if two or more conditions are true
 
     float temp1 = 25;        // Celsius temperature
@@ -14,8 +13,6 @@ int main () {
     else {
         printf("\nThe weather is bad!\n");
     }
-
-
 
 
 
@@ -31,8 +28,6 @@ int main () {
     else {
         printf("\nThe weather is good!\n");
     }
-
-
 
 
 

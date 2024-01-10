@@ -1,19 +1,16 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int main(){
-
-    // switch = A more efficient alternative to using many "else if" statements
+int main() {
+    // switch = A more efficient alternative to using many "else if" statements and
     //          allows a value to be tested for equality against many cases
 
    char grade;
 
    printf("\nEnter a letter grade: ");
-   scanf("%c", &grade);
+   scanf(" %c", &grade);
 
-   grade = toupper(grade);
-
-   switch(grade){
+   switch (toupper(grade)) {
       case 'A':
         printf("Perfect!\n");
         break;
@@ -35,7 +32,6 @@ int main(){
       default:
         printf("Please enter only valid grades!");
    }
-
 
     return 0;
 }

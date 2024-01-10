@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-int main(){
-  
-    /* arithmetic operators:
+int main() {
+    /* 
+    
+    arithmetic operators:
  
     +  (addition)
     -  (subtraction)
@@ -28,6 +29,5 @@ int main(){
     printf("\n%d\n", x);
     printf("\n%d\n", y);
     
-
     return 0;
 }
