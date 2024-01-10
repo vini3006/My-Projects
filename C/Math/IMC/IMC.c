@@ -3,13 +3,29 @@
 int main() {
     float weight, height, IMC;
 
-    printf("\nHello! Welcome to the IMC/BMI calculator!\n");
+    printf("\nHello! Welcome to the IMC/BMI calculator!\n\n");
 
-    printf("\n\nHow much do you weigh, in kilograms? ");
-    scanf(" %f", &weight);
+    while (1) {
+        printf("\nHow much do you weigh, in kilograms? ");
+        if (scanf(" %f", &weight) != 1 || weight <= 0) {
+            printf("Invalid input! Please enter a valid non-zero positive number!\n");
+            while (getchar() != '\n');
+            continue;
+        }
 
-    printf("How tall are you, in meters? ");
-    scanf(" %f", &height);
+        break;
+    }
+
+    while (1) {
+        printf("\nHow tall are you, in meters? ");
+        if (scanf(" %f", &height) != 1 || height <= 0) {
+            printf("Invalid input! Please enter a valid non-zero positive number!\n");
+            while (getchar() != '\n');
+            continue;
+        }
+
+        break;
+    }
 
     IMC = weight / (height * height);
 
