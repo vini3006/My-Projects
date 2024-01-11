@@ -1,6 +1,29 @@
 {
-    "C_Cpp.errorSquiggles": "disabled",
-    "files.associations": {
-        "math.h": "c"
-    }
+    "explorer.confirmDelete": false,
+    "editor.fontSize": 15,
+    "explorer.confirmDragAndDrop": false,
+    "cmake.configureOnOpen": true,
+    "editor.defaultFoldingRangeProvider": null,
+    "code-runner.runInTerminal": true,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "debug.onTaskErrors": "debugAnyway",
+    "git.openRepositoryInParentFolders": "never",
+    "git.enableSmartCommit": true,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "c-cpp-compile-run.output-location": "",
+    "terminal.integrated.cwd": "${fileDirname}",
+    "debug.javascript.defaultRuntimeExecutable": {
+
+        "pwa-node": "node"
+    },
+    "git.path": "",
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "editor.codeActionsOnSave": {
+        
+
+        
+    },
+    "cmake.showOptionsMovedNotification": false,
+    "c-cpp-compile-run.run-in-external-terminal": true,
+    "files.autoSave": "afterDelay"
 }
