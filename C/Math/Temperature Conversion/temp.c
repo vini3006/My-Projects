@@ -14,7 +14,7 @@ int main() {
         printf("\nIs the temperature in Kelvin (K), Fahrenheit (F) or Celsius (C)? ");
         scanf(" %c", &unit);
         unit = toupper(unit);
-        while (getchar() != '\n');
+        while (getchar() != '\n');                                                      ////////////////////
 
         if (unit != 'K' && unit != 'F' && unit != 'C') {
             printf("Error: Enter a valid temperature unit! (K, F or C)\n");

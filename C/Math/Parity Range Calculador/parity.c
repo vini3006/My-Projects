@@ -10,12 +10,12 @@ int main() {
 
     while (1) {
         printf("\nEnter 'E' for even numbers or 'O' for odd numbers: ");
-        scanf(" %c", &parity);
-        if ((parity = toupper(parity)) != 'E' && parity != 'O') {
+        if (scanf(" %c", &parity) != 1 || (toupper(parity) != 'E' && toupper(parity) != 'O')) {
             printf("Invalid input! Please enter 'E' or 'O'!\n");
             while (getchar() != '\n');
             continue;
         }
+        
         break;
     }
 
@@ -66,4 +66,3 @@ int main() {
 
     return 0;
 }
-

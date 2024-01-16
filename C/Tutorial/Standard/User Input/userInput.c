@@ -7,7 +7,7 @@ int main() {
     int age;
 
     printf("\nWhat's your name? ");
-    //scanf("%s", &name);
+    //scanf("%s", &name);               scanf can't read white spaces (in case of names with surnames)
     fgets(name, 25, stdin);
     name[strlen(name)-1] = '\0';
 
