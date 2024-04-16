@@ -3,28 +3,18 @@
 int main() {
     float weight, height, IMC;
 
-    printf("\nHello! Welcome to the IMC/BMI calculator!\n\n");
+    printf("\nHello! Welcome to the IMC/BMI calculator!\n");    // arrumar um jeito de lidar com , e .
 
-    while (1) {
-        printf("\nHow much do you weigh, in kilograms? ");
-        if (scanf(" %f", &weight) != 1 || weight <= 0) {
-            printf("Invalid input! Please enter a valid non-zero positive number!\n");
-            while (getchar() != '\n');
-            continue;
-        }
-
-        break;
+    printf("\nHow much do you weigh, in kilograms? ");
+    while (scanf(" %f", &weight) != 1 || weight <= 0) {
+        printf("ERROR: Please enter a number greater than 0 ==> ");
+        while (getchar() != '\n');
     }
 
-    while (1) {
-        printf("\nHow tall are you, in meters? ");
-        if (scanf(" %f", &height) != 1 || height <= 0) {
-            printf("Invalid input! Please enter a valid non-zero positive number!\n");
-            while (getchar() != '\n');
-            continue;
-        }
-
-        break;
+    printf("\nHow tall are you, in meters? ");
+    while (scanf(" %f", &height) != 1 || height <= 0) {
+        printf("ERROR: Please enter a number greater than 0 ==> ");
+        while (getchar() != '\n');
     }
 
     IMC = weight / (height * height);
@@ -47,7 +37,9 @@ int main() {
         printf("\nYou're in a severe obesity situation!\n");
     }
 
-    printf("\n\nIMC/BMI < 18.5            ------>     Underweight\n");
+    printf("\n\n");
+    
+    printf("IMC/BMI < 18.5            ------>     Underweight\n");
     printf("18.5 <= IMC/BMI < 25.1    ------>     Optimal weight\n");
     printf("25.1 <= IMC/BMI < 30.1    ------>     Overweight\n");
     printf("30.1 <= IMC/BMI < 40      ------>     Obesity\n");

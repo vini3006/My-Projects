@@ -1,35 +1,29 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() {
+double promptCathetus(char cathetus) {
+    double cathetusValue;
 
+    printf("Enter cathetus '%c', in meters: ", cathetus);
+    while (scanf(" %lf", &cathetusValue) != 1 || cathetusValue <= 0) {
+        printf("ERROR: Invalid cathetus value. Please enter a numeric value greater than 0: ");
+        while (getchar() != '\n');
+    }
+
+    return cathetusValue;
+}
+
+int main() {
     double a, b, c;
 
     printf("\nHello! Welcome to the hypotenuse's calculator!\n\n");
 
-    while (1) {
-        printf("\nEnter cathetus \"a\", in meters: ");
-        if (scanf(" %lf", &a) != 1 || a < 0) {
-            printf("Error: Invalid cathetus value. Please enter a valid non-negative and non-zero numeric value!\n");
-            while (getchar() != '\n');
-            continue;
-        }
-
-        break;
-    }
-
-    while (1) {
-        printf("Enter cathetus \"b\", in meters: ");
-        if (scanf(" %lf", &b) != 1 || b < 0) {
-            printf("\nError: Invalid cathetus value. Please enter a valid non-negative and non-zero numeric value!\n\n");
-            while (getchar() != '\n');
-            continue;
-        }
-
-        break;
-    }
+    a = promptCathetus('a');
+    b = promptCathetus('b');
 
     c = sqrt(a*a + b*b);
+
+    } 
 
     printf("\nHypotenuse is %lf meters\n", c);
 

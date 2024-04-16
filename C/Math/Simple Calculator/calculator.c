@@ -40,11 +40,11 @@ int main() {
             printf("\nCannot divide by zero!\n\n");
             while (getchar() != '\n');
             continue;
-        }                                                                      // scanf function returns the number of variables
-                                                                               // that were duly completed, so if != 1, it would                                                                                                                     
-        break;                                                                 // indicate that the input was not successful or
-    }                                                                          // that variable "n2" could not be correctly
-                                                                               // populated with a floating point number
+        }                                                                       // scanf function returns the number of variables
+        //                                                                      // that were duly completed, so if != 1, it would                                                                                                                     
+        break;                                                                  // indicate that the input was not successful or
+    }                                                                           // that variable "n2" could not be correctly
+    //                                                                          // populated with a floating point number
     while (1) {                                                                                      
         switch (operator) {                             
             case '+':
