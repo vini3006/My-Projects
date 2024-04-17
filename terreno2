@@ -10,7 +10,7 @@ matriz: função alterarTerreno(matriz, x, y, sinal) {
         // Verifica se as coordenadas estão dentro dos limites da matriz
         se (x < 0 ou x > 199 ou y < 0 ou y > 199) {
                 escreva("Erro: Coordenadas inválidas!");
-                return matriz;
+                retorne matriz;
         }
 
         // Altera somente a coordenada central caso seja == 0 considere que a verificação do sinal foi feita no algoritmo prévio)
