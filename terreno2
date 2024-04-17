@@ -4,26 +4,18 @@ inteiro função alterarMatriz(matriz, x, y, operação) {
         // Verifica se as coordenadas estão dentro dos limites da matriz
         se (x < 0 ou x >= 200 ou y < 0 ou y >= 200) {
                 escreva("Erro: Coordenadas inválidas!");
-                retorne matriz;
+                retorne 0;
         }
 
-        // Verifica se a operação é válida e atualiza a coordenada central caso seja == 0
+        // Altera a coordenada central, utilizando operador ternário, caso seja == 0 (considere que a verificação do operador foi feita no código em si)
         se (matriz[x][y] == 0) {
-                matriz[x][y] += (operação == '+') ? 1 : (operação == '-') ? -1 : 0;
-        }
-        senão {
-                escreva("Erro: Operação inválida!");
-                retorne matriz;
+                matriz[x][y] += (operação == "+") ? 1 : (operação == "-") ? -1;
         }
 
-                // Utilizando operador ternário, retorna 0 caso a operação seja inválida
-                matriz[x][y] += (operação == "+") ? 1 : (operação == "-") ? -1 : (escreva("Erro: Operação inválida!"); 0);
-        }
-
-        // Alterações dos valores direto na matriz
-        para p de x-1 até x+1 {
-                para q de y-1 até y+1 {
-                        se (0 <= p < 200 e 0 <= q < 200) {
+        // Alterações dos valores na matriz
+        se (0 <= p e p < 200 e 0 <= q e q < 200) {
+                para p de x-1 até x+1 {
+                        para q de y-1 até y+1 {
                                 matriz[p][q] += operação;
                         }
                 }
