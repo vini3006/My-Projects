@@ -11,12 +11,14 @@ inteiro função alterarMatriz(matriz, x, y, operação) {
         se (matriz[x][y] == 0) {
                 matriz[x][y] += (operação == "+") ? 1 : (operação == "-") ? -1;
         }
+        senão {
 
-        // Alterações dos valores na matriz
-        para p de x-1 até x+1 {
-                para q de y-1 até y+1 {
-                        se (0 <= p e p < 200 e 0 <= q e q < 200) {
-                                matriz[p][q] += operação;
+                // Alterações dos valores na matriz
+                para p de x-1 até x+1 {
+                        para q de y-1 até y+1 {
+                                se (0 <= p e p < 200 e 0 <= q e q < 200) {
+                                        matriz[p][q] += operação;
+                                }
                         }
                 }
         }
