@@ -11,6 +11,7 @@ inteiro função alterarMatriz(matriz, x, y, operação) {
         se (matriz[x][y] == 0) {
                 matriz[x][y] += (operação == "+") ? 1 : (operação == "-") ? -1;
         }
+
         senão {
 
                 // Alterações dos valores na matriz
