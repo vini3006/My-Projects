@@ -29,7 +29,7 @@ void função alterarAdjacentes(malha, x, y, novoValor) {
 		}
 	}
 
-	// Altera as diagonais sem afetar o valor central
+	// Altera as diagonais sem afetar o valor central (P.S.: Lógica errada, o "para" aninhado já alteraria o valor de todos os vizinhos e a coordenada central)
     	para dx de -1 até 1 {
 		para dy de -1 até 1 {
 			se (dx != 0 e dy != 0) {    	// Ignora a coordenada central
@@ -58,7 +58,7 @@ void função alterarMalha(malha, x, y, operação, valorAtual, novoValor) {
 	se operação == “+” {
 		novoValor = valorAtual + 1;
 	}
-	senão operação == “-” {
+	senão se operação == “-” {
 		novoValor = valorAtual - 1;
 	}
 	senão {
