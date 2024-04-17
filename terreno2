@@ -1,4 +1,4 @@
-inteiro[][] função alterarTerreno(matriz, x, y, sinal) {
+matriz função alterarTerreno(matriz, x, y, sinal) {
         inteiro p, q;
         inteiro operação = -1;
 
