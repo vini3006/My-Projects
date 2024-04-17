@@ -49,7 +49,7 @@ void função alterarMalha(malha, x, y, operação, valorAtual, novoValor) {
 	se (x < 0 ou x > 199 ou y < 0 ou y > 199 {
 		escreva("Erro! Coordenadas inválidas!");
 		retorne;
-    }
+   	}
 
 	// Obtém o valor atual da coordenada
 	valorAtual = malha[x][y];
