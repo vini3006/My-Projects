@@ -3,11 +3,12 @@ caracter: operação;
 
 void função modificarValores(malha, adjacenteX, adjacenteY, novoValor) {
 
-    // Verifica se o valor do quadrinho adjacente é diferente do novo valor
-    se (malha[adjacenteX][adjacenteY] != novoValor) {
-	    // Atualiza o valor do quadrinho adjacente
-        malha[adjacenteX][adjacenteY] = novoValor;
-    }
+	// Verifica se o valor do quadrinho adjacente é diferente do novo valor
+	se (malha[adjacenteX][adjacenteY] != novoValor) {
+
+		// Atualiza o valor do quadrinho adjacente
+		malha[adjacenteX][adjacenteY] = novoValor;
+	}
 }
 
 void função alterarAdjacentes(malha, x, y, novoValor) {
