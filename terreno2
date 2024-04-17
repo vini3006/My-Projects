@@ -1,15 +1,33 @@
-inteiro função alterarMalha(malha, x, y, operação, valorAtual, novoValo) {
-        inteiro: malha[200][200], x, y, p, q;
-        caracter: operação;
+inteiro função alterarMatriz(matriz, x, y, operação) {
+        inteiro p, q;
 
-        // Alterações direto na matriz
+        // Verifica se as coordenadas estão dentro dos limites da matriz
+        se (x < 0 ou x >= 200 ou y < 0 ou y >= 200) {
+                escreva("Erro: Coordenadas inválidas!");
+                retorne matriz;
+        }
+
+        // Verifica se a operação é válida e atualiza a coordenada central caso seja == 0
+        se (matriz[x][y] == 0) {
+                matriz[x][y] += (operação == '+') ? 1 : (operação == '-') ? -1 : 0;
+        }
+        senão {
+                escreva("Erro: Operação inválida!");
+                retorne matriz;
+        }
+
+                // Utilizando operador ternário, retorna 0 caso a operação seja inválida
+                matriz[x][y] += (operação == "+") ? 1 : (operação == "-") ? -1 : (escreva("Erro: Operação inválida!"); 0);
+        }
+
+        // Alterações dos valores direto na matriz
         para p de x-1 até x+1 {
                 para q de y-1 até y+1 {
-                        se (0 <= x <= 199 e 0 <= y <= 199) {
-                                malha[x][y] = malha[x][y] + operação;
+                        se (0 <= p < 200 e 0 <= q < 200) {
+                                matriz[p][q] += operação;
                         }
                 }
         }
 
-        retorne malha;
+        retorne matriz;
 }
