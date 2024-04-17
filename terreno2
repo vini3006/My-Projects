@@ -2,6 +2,7 @@ matriz função alterarTerreno(matriz, x, y, sinal) {
         inteiro p, q;
         inteiro operação = -1;
 
+        // Define a operação baseado no sinal
         se (sinal == "+") {
                 operação = 1;
         }
@@ -12,7 +13,7 @@ matriz função alterarTerreno(matriz, x, y, sinal) {
                 return matriz;
         }
 
-        // Altera somente a coordenada central caso seja == 0 (considere que a verificação do sinal foi feita no algoritmo prévio)
+        // Altera somente a coordenada central caso seja == 0 considere que a verificação do sinal foi feita no algoritmo prévio)
         se (matriz[x][y] == 0) {
                 matriz[x][y] += operação;
         }
