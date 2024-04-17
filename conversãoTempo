@@ -1,0 +1,24 @@
+algoritmo conversãoTempo
+
+s0, h, min, seg: real
+inteiro: s1
+
+enquanto verdadeiro faça
+    escreva("\nDigite o tempo em segundos: ")
+    leia(s0)
+    se s0 >= 1 e inteiro(s0) = s0 então
+        interrompa
+    senão
+        escreva("Entrada inválida! Por favor, digite um número natural válido maior ou igual a um!\n")
+        enquanto tecla <> '\n' faça
+        fim enquanto
+    fim se
+fim enquanto
+
+s1 <- inteiro(s0)
+
+h <- s1 / 3600
+min <- s1 % 3600 / 60
+seg <- s1 % 60
+
+escreva("\n", h, ":", min, ":", seg)
