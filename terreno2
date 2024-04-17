@@ -14,11 +14,9 @@ inteiro função alterarMatriz(matriz, x, y, operação) {
 
         // Alterações dos valores na matriz
         para p de x-1 até x+1 {
-                se (0 <= p e p < 200 e 0 <= q e q < 200) {
-                        para q de y-1 até y+1 {
-                                se (0 <= p e p < 200 e 0 <= q e q < 200) {
-                                        matriz[p][q] += operação;
-                                }
+                para q de y-1 até y+1 {
+                        se (0 <= p e p < 200 e 0 <= q e q < 200) {
+                                matriz[p][q] += operação;
                         }
                 }
         }
