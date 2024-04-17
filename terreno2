@@ -1,6 +1,6 @@
-matriz função alterarTerreno(matriz, x, y, sinal) {
-        inteiro p, q;
-        inteiro operação = -1;
+matriz: função alterarTerreno(matriz, x, y, sinal) {
+        inteiro: p, q;
+        inteiro: operação = -1;
 
         // Define a operação baseado no sinal
         se (sinal == "+") {
