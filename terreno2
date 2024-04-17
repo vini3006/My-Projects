@@ -1,0 +1,15 @@
+inteiro função alterarMalha(malha, x, y, operação, valorAtual, novoValo) {
+        inteiro: malha[200][200], x, y, p, q;
+        caracter: operação;
+
+        // Alterações direto na matriz
+        para p de x-1 até x+1 {
+                para q de y-1 até y+1 {
+                        se (0 <= x <= 199 e 0 <= y <= 199) {
+                                malha[x][y] = malha[x][y] + operação;
+                        }
+                }
+        }
+
+        retorne malha;
+}
