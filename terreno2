@@ -23,11 +23,11 @@ inteiro função alterarTerreno(matriz, x, y, sinal) {
                 para p de x-1 até x+1 {
                         para q de y-1 até y+1 {
                                 se (0 <= p e p < 200 e 0 <= q e q < 200) {
-                                        se (operação == "+" e matriz[p][q] < matriz[x][y]) {
+                                        se (sinal == "+" e matriz[p][q] < matriz[x][y]) {
                                                 matriz[p][q] += operação;
                                         }
 
-                                        senão se (operação == "-" e matriz[p][q] > matriz[x][y]) {
+                                        senão se (sinal == "-" e matriz[p][q] > matriz[x][y]) {
                                                  matriz[p][q] += operação;
                                         } 
                                 }
