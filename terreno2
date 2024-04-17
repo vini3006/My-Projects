@@ -7,13 +7,13 @@ inteiro função alterarTerreno(matriz, x, y, sinal) {
         }
 
         // Verifica se as coordenadas estão dentro dos limites da matriz
-        se (x < 0 ou x >= 200 ou y < 0 ou y >= 200) {
+        se (x < 0 ou x > 199 ou y < 0 ou y > 199) {
                 escreva("Erro: Coordenadas inválidas!");
                 retorne 0;
         }
 
         // Altera somente a coordenada central caso seja == 0 (considere que a verificação do operador foi feita no algoritmo prévio)
-        senão se (matriz[x][y] == 0) {
+        se (matriz[x][y] == 0) {
                 matriz[x][y] += operação;
         }
 
