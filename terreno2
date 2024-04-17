@@ -1,5 +1,10 @@
-inteiro função alterarMatriz(matriz, x, y, operação) {
+inteiro função alterarTerreno(matriz, x, y, sinal) {
         inteiro p, q;
+        inteiro operação = -1;
+
+        se (sinal == "+") {
+                operação = 1;
+        }
 
         // Verifica se as coordenadas estão dentro dos limites da matriz
         se (x < 0 ou x >= 200 ou y < 0 ou y >= 200) {
@@ -7,9 +12,9 @@ inteiro função alterarMatriz(matriz, x, y, operação) {
                 retorne 0;
         }
 
-        // Altera a coordenada central, utilizando operador ternário, caso seja == 0 (considere que a verificação do operador foi feita no código em si)
-        se (matriz[x][y] == 0) {
-                matriz[x][y] += (operação == "+") ? 1 : (operação == "-") ? -1;
+        // Altera somente a coordenada central caso seja == 0 (considere que a verificação do operador foi feita no algoritmo prévio)
+        senão se (matriz[x][y] == 0) {
+                matriz[x][y] += operação;
         }
 
         senão {
@@ -18,10 +23,18 @@ inteiro função alterarMatriz(matriz, x, y, operação) {
                 para p de x-1 até x+1 {
                         para q de y-1 até y+1 {
                                 se (0 <= p e p < 200 e 0 <= q e q < 200) {
-                                        matriz[p][q] += operação;
+                                        se (operação == "+" e matriz[p][q] < matriz[x][y]) {
+                                                matriz[p][q] += operação;
+                                        }
+
+                                        senão se (operação == "-" e matriz[p][q] > matriz[x][y]) {
+                                                 matriz[p][q] += operação;
+                                        } 
                                 }
                         }
                 }
+
+                matriz[x][y] += operação;
         }
 
         retorne matriz;
