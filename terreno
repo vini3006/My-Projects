@@ -66,7 +66,7 @@ void função alterarMalha(malha, x, y, operação, valorAtual, novoValor) {
 		retorne;
 	}
 
-	// Atualiza o valor da coordenada central
+	// Atualiza o valor da coordenada central (P.S.: Não leva em conta o caso especial da coordenada central ser == 0)
 	malha[x, y] = novoValor;
 
 	alterarAdjacentes(malha, x, y, novoValor);
