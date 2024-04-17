@@ -43,7 +43,7 @@ void função alterarAdjacentes(malha, x, y, novoValor) {
     }
 }
 
-void função alterarMalha(malha, x, y, operação, valorAtual) {
+void função alterarMalha(malha, x, y, operação, valorAtual, novoValor) {
 
 	// Verifica os valores de entrada
 	se (x < 0 ou x > 199 ou y < 0 ou y > 199 {
