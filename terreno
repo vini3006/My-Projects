@@ -30,7 +30,7 @@ void função alterarAdjacentes(malha, x, y, novoValor) {
 	}
 
 	// Altera as diagonais sem afetar o valor central
-    para dx de -1 até 1 {
+    	para dx de -1 até 1 {
 		para dy de -1 até 1 {
 			se (dx != 0 e dy != 0) {    	// Ignora a coordenada central
 				adjacenteX = x + dx;
@@ -40,7 +40,7 @@ void função alterarAdjacentes(malha, x, y, novoValor) {
 				}
 			}
 		}
-    }
+    	}
 }
 
 void função alterarMalha(malha, x, y, operação, valorAtual, novoValor) {
@@ -71,4 +71,3 @@ void função alterarMalha(malha, x, y, operação, valorAtual, novoValor) {
 
 	alterarAdjacentes(malha, x, y, novoValor);
 }
-
